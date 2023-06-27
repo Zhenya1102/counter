@@ -1,0 +1,107 @@
+* {
+    box-sizing: content-box;
+}
+.counter {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1200px;
+    column-gap: 30px;
+}
+
+.counter__block {
+    background-color: #b4b8cd;
+    border-radius: 12%;
+    border: 15px solid #5b4670;
+    padding: 35px;
+    flex: 0 1 500px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter__display {
+    border-radius: 12%;
+    flex: 0 1 100%;
+    border: 15px solid #5b4670;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding: 5px;
+    position: relative;
+}
+.counter__lines {
+    flex: 0 1 200px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.counter__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+label {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 28px;
+    color: #3d2e4a;
+    padding-left: 10px;
+}
+.input {
+    width: 180px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline:3px solid #5b4670;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-right: 10px;
+    background-color: #b4b8cd;
+}
+.input__error {
+    outline:3px solid red;
+    background-color: #c58489;
+}
+.counter__value {
+    flex: 0 1 200px;
+    line-height: 0.8;
+    text-align: center;
+    font-size: 100px;
+    color: #3d2e4a;
+
+}
+.counter__error {
+    color: #8f1616;
+}
+.counter__buttons {
+    display: flex;
+    column-gap: 30px;
+
+}
+.counter__button {
+    font-size: 20px;
+    outline:2px solid #5b4670;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    background-color: #5b4670;
+    color: #dddae0;
+    font-weight: 600;
+    transition: all 0.3s ease 0s;
+}
+
+.counter__button:active {
+    background-color: #8a72a1;
+}
+.counter__button:disabled {
+    background-color: #1a0505;
+    color: #404044;
+}
