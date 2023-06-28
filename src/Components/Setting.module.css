@@ -1,8 +1,21 @@
 .app {
-    margin-top: 100px;
+    margin-top: 80px;
+    margin-bottom: 100px;
 }
 .app__container {
     padding: 0 10px;
+}
+.app__title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #001f54;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+@media (max-width: 490px) {
+    .app__title {
+        font-size: 25px;
+    }
 }
 .counter {
     display: flex;
@@ -26,6 +39,7 @@
     flex: 0 1 400px;
     display: flex;
     justify-content: center;
+    min-height: 367px;
 }
 .counter__display {
     display: flex;
@@ -68,14 +82,18 @@ label {
     font-family: 'Belanosima', sans-serif;
     transition: all 0.3s ease 0s;
 }
+@media (max-width: 350px) {
+    .input {
+        width: 100%;
+    }
+}
 .input:focus {
     outline:3px solid #ffae00;
 }
 
 .input__error {
     outline:3px solid red;
-    background-color: #c58489;
-    background: linear-gradient(to bottom, #c07878 0%, #772a2a 100%);
+    background: linear-gradient(to bottom, #c07878 0%, #803838 100%);
 }
 .input__error:focus {
     outline:3px solid red;
@@ -111,13 +129,16 @@ label {
     text-shadow: 0.5px 1px 0.5px rgba(0,0,0,0.5);
 }
 .counter__button:hover {
-    background-color: #c2a618;
+    background-color: #fccf00;
 }
 .counter__button:active {
     background-color: #8d6201;
 }
 .counter__button:disabled {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     background: linear-gradient(to bottom, #002E63 0%, #013f8f 100%);
-    color: #8d6201;
     border: 3px solid #ffae00;
+    color: #ffae00;
 }
