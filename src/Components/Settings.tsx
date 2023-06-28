@@ -1,6 +1,6 @@
 import React, {ChangeEvent, useEffect, useState} from 'react';
 import {Button} from './Button';
-import s from '../Setting.module.css'
+import s from './Setting.module.css'
 import {Input} from './Input';
 import {Label} from './Label';
 
@@ -63,12 +63,13 @@ export const Settings = () => {
 
     const counterNumberClasses = `${s.counter__value} ${(inputError || countError) ? s.counter__error : ''}`; // переменная для максимального значение в счетчике становится красным
 
-    const counterTitle = inputError ? 'Incorrect value!' : isSetting ? 'enter values and press \'set' : count
+    const counterTitle = inputError ? 'Incorrect value!' : isSetting ? 'enter values and press \'set\'' : count
 
     return (
         <div className={s.counter}>
             <div className={s.counter__block}>
                 <div className={s.counter__display}>
+                    <div className={s.counter__title}>SETTINGS BLOCK</div>
                     <div className={s.counter__lines}>
                         <div className={s.counter__line}>
                             <Label name={'MAX VALUE:'} htmlFor={'1'}/>
@@ -84,6 +85,7 @@ export const Settings = () => {
             </div>
             <div className={s.counter__block}>
                 <div className={s.counter__display}>
+                    <div className={s.counter__title}>COUNTER</div>
                     <div className={counterNumberClasses}>{counterTitle}</div>
                     <div className={s.counter__buttons}>
                         <Button callBack={onClickIncHandler} name={'INC'} disabled={incDisabled}/>

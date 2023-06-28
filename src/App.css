@@ -1,7 +1,6 @@
-
 .App {
-  /*margin-top: 150px;*/
-  /*text-align: center;*/
-  height: 100vh;
-  margin-top: 200px;
+    margin-top: 200px;
+}
+.App__container {
+    padding: 0 10px;
 }
