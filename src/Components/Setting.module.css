@@ -1,6 +1,5 @@
 .app {
     margin-top: 80px;
-    margin-bottom: 100px;
 }
 .app__container {
     padding: 0 10px;
@@ -40,6 +39,10 @@
     display: flex;
     justify-content: center;
     min-height: 367px;
+    align-self: flex-start;
+}
+.counter__block:last-child{
+    margin-bottom: 30px;
 }
 .counter__display {
     display: flex;
