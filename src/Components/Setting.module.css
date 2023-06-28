@@ -42,7 +42,7 @@
     align-self: flex-start;
 }
 .counter__block:last-child{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .counter__display {
     display: flex;
@@ -84,6 +84,10 @@ label {
     background: linear-gradient(to bottom, #002E63 0%, #013f8f 100%);
     font-family: 'Belanosima', sans-serif;
     transition: all 0.3s ease 0s;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    cursor: pointer;
 }
 @media (max-width: 350px) {
     .input {
