@@ -42,7 +42,7 @@
     align-self: flex-start;
 }
 .counter__block:last-child{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .counter__display {
     display: flex;
