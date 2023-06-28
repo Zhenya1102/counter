@@ -1,11 +1,10 @@
 .app {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .app__container {
     padding: 0 10px;
 }
 .counter {
-    /*padding: 0 10px;*/
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
@@ -29,17 +28,10 @@
     justify-content: center;
 }
 .counter__display {
-    /*border-radius: 12%;*/
-    /*flex: 0 1 100%;*/
-    /*border: 15px solid #5b4670;*/
-    /*height: 100%;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*align-items: center;*/
     row-gap: 30px;
-    /*padding: 5px;*/
-    /*position: relative;*/
 }
 .counter__title {
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
@@ -47,8 +39,6 @@
     font-size: 25px;
 }
 .counter__lines {
-    /*flex: 0 1 200px;*/
-    /*padding-top: 30px;*/
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -56,8 +46,6 @@
 .counter__line {
     display: flex;
     flex-direction: column;
-    /*width: 100%;*/
-    /*justify-content: space-between;*/
     row-gap: 10px;
 }
 label {
@@ -75,31 +63,31 @@ label {
     text-align: center;
     font-size: 25px;
     padding: 5px;
-    /*font-weight: 600;*/
     color: #ffae00;
-    /*padding-right: 10px;*/
-    background: linear-gradient(to bottom, #002E63 0%, #0649b2 100%);
+    background: linear-gradient(to bottom, #002E63 0%, #013f8f 100%);
     font-family: 'Belanosima', sans-serif;
+    transition: all 0.3s ease 0s;
 }
 .input:focus {
     outline:3px solid #ffae00;
 }
+
 .input__error {
-    /*outline:3px solid red;*/
-    /*background-color: #c58489;*/
+    outline:3px solid red;
+    background-color: #c58489;
+    background: linear-gradient(to bottom, #c07878 0%, #772a2a 100%);
+}
+.input__error:focus {
+    outline:3px solid red;
 }
 .counter__value {
     text-align: center;
-    /*flex: 0 1 200px;*/
-    /*line-height: 0.8;*/
-    /*text-align: center;*/
-    font-size: 30px;
-    /*color: #3d2e4a;*/
+    font-size: 50px;
 
 }
-/*.counter__error {*/
-/*    color: #8f1616;*/
-/*}*/
+.counter__error {
+    color: red;
+}
 .counter__buttons {
     display: flex;
     column-gap: 30px;
@@ -113,24 +101,23 @@ label {
     align-self: center;
     font-family: 'Belanosima', sans-serif;
     font-size: 20px;
-    /*outline:2px solid #5b4670;*/
     border-radius: 5px;
     padding: 10px 25px;
     cursor: pointer;
     background-color: #ffae00;
     color: #001F54;
-    /*font-weight: 600;*/
     transition: all 0.3s ease 0s;
     border: 3px solid #00152a;
     text-shadow: 0.5px 1px 0.5px rgba(0,0,0,0.5);
 }
 .counter__button:hover {
-    background-color: #f1c900;
+    background-color: #c2a618;
 }
 .counter__button:active {
     background-color: #8d6201;
 }
-/*.counter__button:disabled {*/
-/*    background-color: #1a0505;*/
-/*    color: #404044;*/
-/*}*/
+.counter__button:disabled {
+    background: linear-gradient(to bottom, #002E63 0%, #013f8f 100%);
+    color: #8d6201;
+    border: 3px solid #ffae00;
+}
