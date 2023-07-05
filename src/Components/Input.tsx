@@ -1,5 +1,5 @@
 import React, {ChangeEvent} from 'react';
-import s from './Setting.module.css'
+import s from './Counter.module.css'
 
 type InputPropsType = {
     id: string

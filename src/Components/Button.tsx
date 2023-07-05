@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Setting.module.css'
+import s from './Counter.module.css'
 
 export type ButtonTypeProps = {
     name: string
